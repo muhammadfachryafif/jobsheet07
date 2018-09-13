@@ -9,9 +9,18 @@ public class jobskeet07 {
         System.out.println("\nHitung Fibonacci");
         System.out.println("1, 1, 2, 3, 5, 8, 13, 21,...dat.\n");
     }
+    private static int tampilInput() {
+        Scanner baca = new Scanner(System.in);
+        
+        System.out.println("bilangan ke- : ");
+        int n = baca.nextInt();
+        
+        return n;
+    }
      public static void main(String[] args)
     {    
         String identitas = "MUHAMMAD FACHRI AFIF/X RPL 2 / 22";
         tampilJudul(identitas);
+        int n = tampilInput();
     }
 }
